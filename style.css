@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Montserrat');
+  * {
+    box-sizing: border-box; 
+  }
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+  }
+  #main {
+    display: flex;
+    flex: 1;
+  }
+  #main > article {
+    flex: 1;
+    order: 1;
+    text-align: center;
+  }
+  #main img {
+    width: 80%;
+    box-shadow: 10px 10px 40px grey;
+  }
+  #main > nav, 
+  #main > aside {
+    flex: 0 0 20vw;
+  }
+  #main > nav {
+    background: #D7E8D4;
+    order: 3;
+  }
+  #main > aside {
+    background: beige;
+    order: 2;
+  }
+  header {
+    background: white;
+    border-bottom: 1px solid black;
+    height: 10vh;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+  }
+  footer {
+    background: white;
+    border-bottom: 1px solid black;
+    height: 18vh;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+  }
+  header, footer, article, nav, aside {
+    padding: 1em;
+  }
+  p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    box-shadow: 10px 10px 40px grey;
+    padding: 10px;
+    width: 50%;
+    display: inline-block;
+    border-radius: 6px;
+    background-color: rgb(255, 144, 144);
+    border: 2px solid white;
+    color: white;
+  }
+
+  .axis path,
+.axis line, 
+.axis1 path,
+.axis1 line {
+  fill: none;
+  stroke: #E6E7E8;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path, .x.axis1 path {
+  display: none;
+}
+
+.line {
+  fill: none;
+  stroke-width: 1.5px;
+}
+
+.legend-box {
+  cursor: pointer;  
+}
+
+#mouse-tracker {
+  stroke: #E6E7E8;
+  stroke-width: 1px;
+}
+
+.hover-line { 
+  stroke: #E6E7E8;
+  fill: none;
+  stroke-width: 1px;
+  left: 10px;
+  shape-rendering: crispEdges;
+  opacity: 1e-6;
+}
+
+.hover-text {
+  stroke: none;
+  font-size: 30px;
+  font-weight: bold;
+  fill: #000000;
+}
+
+.tooltip {
+  font-weight: normal;
+}
+
+.brush .extent {
+  stroke: #FFF;
+  shape-rendering: crispEdges;
+}
